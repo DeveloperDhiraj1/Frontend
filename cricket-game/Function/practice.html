@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do-List</title>
+    <style>
+        #my-button{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            color: blue;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 10px;
+            font-size: 30px;
+            cursor: pointer;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <h3 id="greating"></h3>
+    <button id="my-button" onclick="clickbutton();">0</button>
+    <script>
+        let countbutton=0;
+        function clickbutton(){
+            let button=document.querySelector('#my-button');
+            countbutton++;
+            button.innerText=countbutton;
+        }
+
+
+        function dogreat(personName = 'dear') {
+            let mydate = new Date();
+            let hour = mydate.getHours(); 
+            let heading = document.querySelector('#greating');
+
+            if (hour > 6 && hour <= 12) {
+                heading.innerText = `Good morning ${personName}`;
+            } 
+            else if (hour > 12 && hour < 18) {
+                heading.innerText = `Good evening ${personName}`;
+            } 
+            else {
+                heading.innerText = `Good night ${personName}`;
+            }
+        }
+
+        dogreat('Dhiraj');
+    </script>
+</body>
+</html>

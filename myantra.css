@@ -1,0 +1,25 @@
+.box{
+            border: 2px solid black;
+            height: 150px;
+            width: 800px;
+            padding: 10px;
+            margin: 10px 10px 10px 10px;
+        }
+        .add-bag{
+            background-color: greenyellow;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 15px;
+        }
+        .wishlist{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px 20px;
+            text-transform: uppercase;
+        }
+        .sell{
+            background-color: greenyellow;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 30px;
+        }

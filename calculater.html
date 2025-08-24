@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="calculator-box">
+        <input type="text" id="text" readonly>
+        <div class="button-contener">
+            <button class="button" onclick="contener='' 
+            document.querySelector('#text').value=contener; ">C</button>
+            <button class="button" onclick="contener=contener+'1' 
+            document.querySelector('#text').value=contener; ">1</button>
+            <button class="button" onclick="contener=contener+'2' 
+            document.querySelector('#text').value=contener; ">2</button>
+            <button class="button" onclick="contener=contener+'+' 
+            document.querySelector('#text').value=contener; ">+</button>
+            <button class="button" onclick="contener=contener+'3' 
+            document.querySelector('#text').value=contener; ">3</button>
+            <button class="button" onclick="contener=contener+'4' 
+            document.querySelector('#text').value=contener; ">4</button>
+            <button class="button" onclick="contener=contener+'-' 
+            document.querySelector('#text').value=contener; ">-</button>
+            <button class="button" onclick="contener=contener+'5' 
+            document.querySelector('#text').value=contener; ">5</button>
+            <button class="button" onclick="contener=contener+'6' 
+            document.querySelector('#text').value=contener; ">6</button>
+            <button class="button" onclick="contener=contener+'*' 
+            document.querySelector('#text').value=contener; ">*</button>
+            <button class="button" onclick="contener=contener+'7' 
+            document.querySelector('#text').value=contener; ">7</button>
+            <button class="button" onclick="contener=contener+'8' 
+            document.querySelector('#text').value=contener; ">8</button>
+            <button class="button" onclick="contener=contener+'/' 
+            document.querySelector('#text').value=contener; ">/</button>
+            <button class="button" 
+            onclick=
+            "let result=eval(contener);
+            contener=result; 
+            document.querySelector('#text').value=contener; ">=</button>
+            <button class="button" onclick="contener=contener+'9' 
+            document.querySelector('#text').value=contener; ">9</button>
+            <button class="button" onclick="contener=contener+'0' 
+            document.querySelector('#text').value=contener; ">0</button>
+            <button class="button" onclick="contener=contener+'.' 
+            document.querySelector('#text').value=contener; ">.</button>
+            
+        </div>
+    </div>
+    <script src="clc.js"></script>
+</body>
+</html>

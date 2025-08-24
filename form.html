@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px;
+        }
+        form{
+            background-color: rgb(226, 225, 180);
+            display: block;
+            text-align: center;
+            background-origin: padding-box;
+        }
+    </style>
+</head>
+<body bgcolor="lightblue">
+    <div class="box">
+    <h2>User Registration Form</h2>
+    <form action="/submit" method="post">
+        <label for="First name">First Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="Fathers Name">Fathers name:</label>
+        <input type="text" id="name" name="Fathers Name" required><br><br>
+        <label for="Mothers Name">Mothers Name</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="D.O.B">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <label for="Country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="IN">India</option>
+            <option value="US">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="CA">Canada</option>
+            <option value="AU">Australia</option>
+        </select><br><br>
+        <label for="State">State:</label>
+        <select name="state" id="State" required>
+            <option value="">--Select State--</option>
+            <option value="bh">Bihar</option>
+            <option value="up">Uttar Predesh</option>
+            <option value="Mp">Madhy Predesh</option>
+            <option value="dc">Delhi</option>
+        </select><br><br>
+        <label for="District">District:</label>
+        <select name="District" id="District" required>
+            <option value="">--Select District--</option>
+            <option value="Bg">Begusarai</option>
+            <option value="sn">saran</option>
+        </select><br><br>
+        
+        <label for="Mobile Number">Mobile Number:</label>
+        <input type="string" id="number" placeholder="9999998887" name="mobile Number" required>
+        <br><br>
+        
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        <br><br>
+        
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="Conform Password">Conform Password:</label>
+        <input hitype="conform password" id="conform password" name="conform password" required >
+        <br><br>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        
+        
+        <input type="submit" value="Register">
+    </form>
+    </div>
+</body>
+</html>
